@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AGkBA;;;;;;;;;;;;;;;;;EAiBE;AEnCF,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACR,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,kBAAkB;CAahC;;AFuBG,MAAM,EAAE,SAAS,EAAE,IAAI;EEtC3B,AAAA,IAAI,CAAC;IAKD,SAAS,EAAE,MAAM;GAUpB;;;AFoBG,MAAM,EAAE,SAAS,EAAE,OAAO;EEnC9B,AAAA,IAAI,CAAC;IASD,SAAS,EAAE,GAAG;GAMjB;;;AF0BG,MAAM,EAAE,SAAS,EAAE,OAAO;EEzC9B,AAAA,IAAI,CAAC;IAaD,SAAS,EAAE,GAAG;GAEjB",
+    "sources": [
+        "../sass/main.sass",
+        "../sass/1-abstracts/_functions.scss",
+        "../sass/1-abstracts/_vars.scss",
+        "../sass/1-abstracts/_mixin.scss",
+        "../sass/2-basics/_animations.scss",
+        "../sass/2-basics/_normalize.scss",
+        "../sass/2-basics/_typography.scss",
+        "../sass/2-basics/_utilities.scss",
+        "../sass/3-components/_buttons.scss",
+        "../sass/5-pages/_index.scss",
+        "../sass/5-pages/_folio.scss",
+        "../sass/5-pages/_contact.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

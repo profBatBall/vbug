@@ -1,0 +1,49 @@
+/* 
+0 - 600px        Phone
+600 - 900px      Tablet Portrait
+900 - 1200px     Tablet Landscape
+1200 - 1800px    Noramal Sixe
+1800px++         Big Screen
+
+$breakpoint is argument
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + Typography > layout + Grid > Page layout > Components
+
+em is more suitable for media query
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
