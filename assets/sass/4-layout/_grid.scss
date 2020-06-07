@@ -1,0 +1,40 @@
+$width: 125rem;
+$gutter-horizontal: 4rem;
+
+
+.row{
+  max-width: $width;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 4rem;;
+  
+
+  & .col-1-of-1 {
+    width: 65%;
+    // background-color: red;
+  }
+
+  & .col-1-of-2 {
+    width: 35%;
+    // background-color: yellow;
+  }
+
+  & .col-35 {
+    order: 2;
+  }
+
+  & .col-65 {
+    order: 1;
+  }
+
+  & .col-4 {
+    border-radius: 0.5rem;
+    background-color: $color-primary;
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+}
+

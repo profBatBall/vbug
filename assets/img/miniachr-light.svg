@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="449" height="126" viewBox="0 0 449 126">
+<svg xmlns="http://www.w3.org/2000/svg" width="1527" height="381" viewBox="0 0 1527 381">
   <defs>
     <style>
       .cls-1 {
-        font-size: 119px;
+        font-size: 416.667px;
+        fill: #fefefe;
         font-family: "Segoe UI";
         font-weight: 300;
       }
     </style>
   </defs>
-  <text id="miniachr" class="cls-1" x="10" y="100">miniachr</text>
+  <text id="miniachr" class="cls-1" y="335.535">miniachr</text>
 </svg>

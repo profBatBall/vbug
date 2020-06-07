@@ -1,0 +1,25 @@
+.section {
+
+  &__content {
+
+    &__img-1 {
+      background-image: url("/assets/img/design-about.svg");
+      width: 50%;
+      height: 17rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  
+    &__img-2 {
+      background-image: url("/assets/img/develop-about.svg");
+      width: 50%;
+      height: 17rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-top: 5rem;
+    }
+  }
+}

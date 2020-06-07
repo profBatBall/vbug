@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1616" height="521" viewBox="0 0 1616 521">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 416.667px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fefefe;
+        font-family: "Segoe UI";
+      }
+
+      .cls-2 {
+        font-size: 125px;
+      }
+    </style>
+  </defs>
+  <text id="miniachr" class="cls-1" y="335.514">miniachr</text>
+  <text id="by_Vicky" data-name="by Vicky" class="cls-2" x="1123.375" y="465.569">by Vicky</text>
+</svg>
