@@ -16,46 +16,22 @@
   }
 
   & .section {
-    padding: 5rem 0;
+    padding: 5rem 11.5rem !important;
     border-radius: 0.5rem;
 
-    &__about {
-      max-width: $width;
-      margin: 0 auto;
-    }
-  
     &__work {
       background-color: $color-box-model;
       box-shadow: 0px 0px 6px -1px rgba($color-black, 0.5);
-  
-      &__wrap {
-        max-width: $width;
-        margin: 0 auto;
-      }
     }
   
     &__testimonials {
       padding-bottom: 8rem;
-
-      &__wrap {
-        max-width: $width;
-        margin: 0 auto;
-      }
     }
   
     &__help {
       background-color: $color-box-model;
       box-shadow: 0px 0px 6px -1px rgba($color-black, 0.5);
-
-      &__wrap {
-        max-width: $width;
-        margin: 0 auto;
-      }
     }
-  }
-
-  & .height {
-    padding: 50px 0;
   }
 }
 

@@ -6,20 +6,27 @@ body {
 .section__dialogue {
   position: absolute;
   top: 18rem;
-  left: 15rem;
+  left: 13.5rem;
 
   &--main {
     font-size: 8rem;
     text-transform: uppercase;
     font-weight: 300;
+    color: $color-primary-text;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
   }
 
   &--sub {
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 300;
+    color: $color-primary-text;
+    opacity: 0.7;
     letter-spacing: 1.85rem;
     margin: -1rem 0 3rem -2.1rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
   }
 }
 
@@ -27,33 +34,55 @@ body {
 
 .section {
   
-  &__content {
-    padding-bottom: 3rem;
+  &-sub {
+    font-size: 1.5rem;
+    color: $color-primary-text;
+  }
 
-    &--head {
+  &__key__point {
 
-      &-1 {
-        text-align: left;
-        padding-top: 2rem;
-      }
-
-      &-2 {
-        text-align: right;
-        padding-top: 2rem;
-      }
+    &-wrap {
+      text-align: center;
+      color: $color-primary-text;
+      padding-top: 1rem;
     }
 
-    &--sub {
+    &-head {
+      font-size: 3.5rem;
+      font-weight: 400;
+    }
 
-      &-1 {
-        text-align: left;
-        padding-top: 2rem;
+    &-sub {
+      font-size: 1.5rem;
+      opacity: 0.8;
+    }
+  }
 
+  &__motto {
+
+    &__wrap {
+      margin: 2rem 0 5rem 0 !important;
+    }
+
+    &-num {
+      font-size: 12rem;
+      opacity: 0.1;
+      color: $color-primary-text;
+    }
+
+    &__description {
+      margin: -10.5rem 0 0 2rem;
+
+      &-head {
+        font-size: 3.5rem;
+        font-weight: 400;
+        color: $color-primary-text;
+        margin-bottom: 1rem;
       }
 
-      &-2 {
-        text-align: right;
-        padding-top: 2rem;
+      &-sub {
+        font-size: 2rem;
+        font-weight: 300;
       }
     }
   }
@@ -87,9 +116,9 @@ body {
 
 .section__content {
   max-width: 80rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: left;
-  padding-top: 2rem;
+  padding: 2rem 0 2rem;
   margin-left: 0.5rem;
-  color: $color-black;
+  color: $color-primary-text;
 }
