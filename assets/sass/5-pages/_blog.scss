@@ -1,0 +1,39 @@
+.temp__main {
+  margin: -2rem 2rem 0 2rem;
+  border-radius: 0.4rem;
+  background-color: $color-white;
+  box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+.progress {
+
+  &__img {
+    background-image: url(/assets/img/Maintenance-rafiki.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 50rem;
+  }
+
+  &__head, &__sub {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $color-primary-text;
+  }
+
+  &__sub {
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
+  }
+}
+
+.temp__footer {
+  background-color: $color-primary;
+  padding: 2rem;
+
+  p {
+    text-align: center;
+    color: $color-white;
+  }
+}

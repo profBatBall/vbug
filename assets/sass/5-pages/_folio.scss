@@ -2,21 +2,130 @@
   padding: 0 2rem;
   position: relative;  
 
-  & .section__dashboard {
-      margin-top: -2rem;
-
-    &__hero2 {
-      background-image: url("/assets/img/hero.jpg");
-      width: 100%;
-      height: 55rem;
-      background-size: cover;
-      box-shadow: 0px 0px 6px -1px rgba($color-black, 0.5);
-      border-radius: 0.4rem;
-    }
+  & .section-bg {
+    background-color: #F1F1F1;
+    box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
   }
 
-  & .section__help {
-    padding: 5rem 2rem;
-    padding: honeydew;
+  & .section-bg-white {
+    background-color: $color-white;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+  }
+
+  & .folio {
+
+    &__dashboard {
+      margin-top: -2rem;
+
+      &__hero2 {
+        background-image: url("/assets/img/hero.jpg");
+        width: 100%;
+        height: 55rem;
+        background-size: cover;
+        box-shadow: 0px 0px 6px -1px rgba($color-black, 0.5);
+        border-radius: 0.4rem;
+      }
+    }
+
+    &__about {
+
+      &__wrap {
+
+        &--num {
+          font-size: 10rem;
+          opacity: 0.1;
+          color: $color-primary-text;
+          position: absolute;
+          margin: -3rem 0 0 -2rem !important;
+        }
+      }
+    }
+
+    &__content__speci {
+      display: flex;
+      justify-content: space-around;
+
+      &--head {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-primary-text;
+        margin: 1.2rem 0;
+      }
+
+      &--items {
+        list-style: none;
+        display: block;
+
+        li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__works {
+
+      & .box {
+
+        &__model {
+            width: calc((100% - 3 * #{$gutter-box}) / 4);
+        
+            &:not(:last-child) {
+              margin-right: $gutter-box;
+            }
+        }
+
+        &__lg {
+          width: 100%;
+          height: 15rem;
+          background-color: red;
+          border-radius: 0.3rem;
+          margin-bottom: $gutter-box-mini;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        &__sm__wrap {
+          display: flex;
+          width: 100%;
+        }
+
+        &__sm {
+          width: 100%;
+          height: 12rem;
+          background-color: green;
+          border-radius: 0.3rem;
+          margin-bottom: $gutter-box-mini;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          &:not(:last-child) {
+            margin-right: $gutter-box-mini;
+            
+          }
+        }
+
+        &__xl {
+          width: 100%; 
+          height: 28rem;
+          background-color: pink;
+          border-radius: 0.3rem;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    &__help {
+      margin-top: 1rem;
+    }
   }
 }

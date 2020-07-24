@@ -122,3 +122,90 @@ body {
   margin-left: 0.5rem;
   color: $color-primary-text;
 }
+
+//-------Folio Starts from here
+
+// Hero Section Dialogue
+.folio__dialogue {
+  position: absolute;
+  top: 16rem;
+  left: 13.5rem;
+
+  &--hello {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $color-primary-text;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+  }
+
+  &--main {
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $color-primary-text;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+  }
+
+  &--sub {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $color-primary-text;
+    opacity: 0.7;
+    // letter-spacing: 1.85rem;
+    margin: -1rem 0 3rem 0;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+  }
+}
+
+
+//--Folio-About-------
+
+.folio__content {
+  margin-bottom: 2.5rem;
+
+  &__head {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: $color-primary-text;
+    // margin-top: -1rem;
+  }
+
+  &__para {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+//--Contact-Starts-from-here-------
+
+.section {
+
+  & .email {
+    font-size: 9rem;
+    font-weight: 400;
+    text-align: center;
+    color: $color-primary-text;
+    padding: 2rem 0;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.contact {
+
+  &__head {
+    font-size: 5rem;
+    font-weight: 400;
+    color: $color-primary-text;
+    margin-bottom: 2rem;
+  }
+}
+

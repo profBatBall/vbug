@@ -1,0 +1,73 @@
+.contact {
+
+  &__wrap {
+    background-color: $color-white;
+    margin-top: -2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.5);
+  }
+
+  &__box__wrap {
+    // background-color: rebeccapurple;
+    max-width: $width;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem 5rem;
+  }
+
+  &__box__left, &__box__right {
+    width: 50%;
+  }
+
+  &__box__left {
+    // background-color: purple;
+    padding: 5rem 7.5rem 0;
+  }
+
+  &__form {
+
+    & > * {
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    & label {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      color: $color-primary-text;
+    }
+
+    & input, & button, & textarea {
+      padding: 1rem 1.5rem;
+      border-radius: 0.2rem;
+      width: 100%;
+      border: 2px solid $color-primary;
+      resize: none;
+    }
+
+    & button {
+      background-color: $color-primary;
+      color: $color-white;
+      border: none;
+      outline: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #007c78;
+      }
+    }
+  }
+
+  &__img__wrap {
+    max-width: 38rem;
+    margin: 8.5rem auto 0;
+  }
+
+  &__img {
+    background-image: url(/assets/img/Social-Growth-pana.svg);
+    height: 40rem;
+    width: 38rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
