@@ -1,0 +1,184 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="favicon.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <title>miniachr | FOLIO</title>
+</head>
+<body>
+  <!--Full width navigation-->
+  <div class="m_navigation">
+    <input type="checkbox" class="m_navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="m_navigation__button">
+      <span class="m_navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="m_navigation__background"></div>
+
+    <nav class="m_navigation__nav">
+      <ul class="m_navigation__list">
+        <li class="m_navigation__item"><a href="index.html" class="m_navigation__link"><span>01</span>Home</a></li>
+        <li class="m_navigation__item"><a href="folio.html" class="m_navigation__link"><span>02</span>Folio</a></li>
+        <li class="m_navigation__item"><a href="#works" class="m_navigation__link"><span>03</span>Works</a></li>
+        <li class="m_navigation__item"><a href="blog.html" class="m_navigation__link"><span>04</span>Blog</a></li>
+        <li class="m_navigation__item"><a href="contact.html" class="m_navigation__link"><span>05</span>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
+
+    <a href="index.html" class="header__logo">
+      <img src="assets/img/miniachr-light-1.svg" alt="miniachr">
+    </a>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link navigation__active">Folio</a></li>
+        <li class="navigation__item"><a href="#works" class="navigation__link">Works</a></li>
+        <li class="navigation__item"><a href="blog.html" class="navigation__link">Blog</a></li>
+        <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="folio__dashboard">
+      <div class="folio__dashboard__hero2" data-aos="zoom-in"></div>
+      <div class="folio__dashboard folio__dialogue">
+        <h2 class="folio__dialogue--hello">Hello,</h2>
+        <h1 class="folio__dialogue--main">I am Vicky</h1>
+        <h3 class="folio__dialogue--sub">&nbsp;a web UI / UX developer.</h3>
+        <a href="#about" class="btn btn-teal btn-animated">Explore</a>
+      </div>
+    </section>
+
+    <section class="section folio__about" id="about">
+      <div class="folio__head__wrap">
+        <h1 class="section-head" data-aos="zoom-in">About</h1>
+      </div>
+
+      <div class="row folio__about__wrap">
+        <div class="col-2 folio__about__wrap--left" data-aos="zoom-in">
+          <div class="folio__content">
+            <h1 class="folio__about__wrap--num">1</h1>
+            <h1 class="folio__content__head">What I know</h1>
+            <p class="folio__content__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique placeat nemo in ullam accusantium architecto esse, laboriosam sit ab tempore perspiciatis minus ea, harum doloribus sequi minima quos vitae animi.</p>
+          </div>
+          <div class="folio__content">
+            <h1 class="folio__about__wrap--num">2</h1>
+            <h1 class="folio__content__head">What I can do</h1>
+            <p class="folio__content__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique placeat nemo in ullam accusantium architecto esse, laboriosam sit ab tempore perspiciatis minus ea, harum doloribus sequi minima quos vitae animi.</p>
+          </div>
+        </div>
+  
+        <div class="col-2 folio__about__wrap--right" data-aos="zoom-in">
+          <h1 class="folio__about__wrap--num">3</h1>
+          <h1 class="folio__content__head">Specialization</h1>
+          <p class="folio__content__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique placeat nemo in ullam accusantium architecto esse, laboriosam sit ab tempore perspiciatis minus ea, harum doloribus sequi minima quos vitae animi.</p>
+          <div class="folio__content__speci">
+            <div class="folio__content__speci--left">
+              <h3 class="folio__content__speci--head">Frontend</h3>
+              <ul class="folio__content__speci--items">
+                <li>HTML5, CSS3</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>SaaS</li>
+                <li>JavaScript / Jquery</li>
+              </ul>
+            </div>
+            <div class="folio__content__speci--right">
+              <h3 class="folio__content__speci--head">Backend</h3>
+              <ul class="folio__content__speci--items">
+                <li>Php</li>
+                <li>Sqlite & MonogDb</li>
+                <li>NodeJS</li>
+                <li>Rest API</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section section-bg folio__works" id="works">
+      <h1 class="section-head" data-aos="fade-right">Works</h1>
+
+      <div class="box">
+
+        <div class="box__wrapper">
+          <div class="box__model" data-aos="zoom-in">
+            <div class="box__lg box__lg-1 box__h__effect" style="margin-bottom: 0.7rem;"></div>
+            <div class="box__sm__wrap">
+              <div class="box__sm box__sm-1 box__h__effect">&nbsp;</div>
+              <div class="box__sm box__sm-2 box__h__effect">&nbsp;</div>
+            </div>
+          </div>
+
+          <div class="box__model" data-aos="zoom-in">
+            <div class="box__xl box__xl-1 box__h__effect">&nbsp;</div>
+          </div>
+        </div>
+
+        <div class="box__wrapper box__wrapper-m">
+          <div class="box__model box__order" data-aos="zoom-in">
+            <div class="box__sm__wrap">
+              <div class="box__sm box__sm-3 box__h__effect">&nbsp;</div>
+              <div class="box__sm box__sm-4 box__h__effect">&nbsp;</div>
+            </div>
+            <div class="box__lg box__lg-2 box__h__effect"  style="margin-top: 0.7rem;">&nbsp;</div>
+          </div>
+
+          <div class="box__model" data-aos="zoom-in">
+            <div class="box__xl box__xl-2 box__h__effect">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section section-bg-white folio__help">
+      <div class="section__help__wrap">
+        <h1 class="section-head" data-aos="fade-right">I can help</h1>
+        <p class="section__content" data-aos="fade-up">If you have a project that you want to get started, think you need my help with something or just fancysaying hey, then get in touch. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deleniti minima impedit, vero enim fugit quisquam aut voluptatum delectus!</p>
+        <a href="mailto:atyour.service@miniachr.com" class="btn btn-teal btn-animated" data-aos="fade-up">Email Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap">
+      <div href="#" class="footer__logo"></div>
+      <p class="footer__copyright">&copy;2020. All rights reserved.</p>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__list__item"><a href="index.html" class="navigation__list__link">Home</a></li>
+          <li class="navigation__list__item"><a href="folio.html" class="navigation__list__link">Folio</a></li>
+          <li class="navigation__list__item"><a href="#works" class="navigation__list__link">Works</a></li>
+          <li class="navigation__list__item"><a href="blog.html" class="navigation__list__link">Blog</a></li>
+          <li class="navigation__list__item"><a href="contact.html" class="navigation__list__link">Contact</a></li>
+        </ul>
+
+        <p class="copyright">&copy;2020 - 2022. All rights reserved.</p>
+      </nav>
+
+    </div>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/assets/scripts/script.js"></script>
+</body> 
+</html>
+

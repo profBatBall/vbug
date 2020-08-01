@@ -8,20 +8,66 @@
   }
 
   &__box__wrap {
-    // background-color: rebeccapurple;
     max-width: $width;
     margin: 0 auto;
     display: flex;
     padding: 2rem 5rem;
+
+    @include respond(tab-land) {
+      padding: 2rem 3.5rem !important;
+    }
+
+    @include respond(tab-port) {
+      padding: 2rem 2rem !important;
+    }
+
+    @include respond(tab-port) {
+      padding: 2rem 1.5rem !important;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 2rem 3.5rem !important;
+    }
+
+    @include respond(phone) {
+      padding: 2rem 1rem !important;
+    }
   }
 
   &__box__left, &__box__right {
     width: 50%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__box__left {
     // background-color: purple;
-    padding: 5rem 7.5rem 0;
+    padding: 5rem 7.5rem 2rem;
+
+    @include respond(tab-land) {
+      padding: 5rem 6.5rem 2rem;
+    }
+
+    @include respond(tab-port) {
+      padding: 5rem 4.5rem 2rem;
+    }
+
+    @include respond(xl-phone) {
+      padding: 5rem 3rem 2rem;
+    }
+
+    @include respond(phone) {
+      padding: 5rem 7rem 2rem;
+      order: 2;
+    }
+
+    @include respond(sm-phone) {
+      padding: 5rem 2rem 2rem;
+    }
+
   }
 
   &__form {
@@ -61,6 +107,7 @@
   &__img__wrap {
     max-width: 38rem;
     margin: 8.5rem auto 0;
+    padding: 0 2rem;
   }
 
   &__img {
@@ -69,5 +116,17 @@
     width: 38rem;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include respond(xl-phone) {
+      height: 35rem;
+      width: 33rem;
+    }
+  }
+
+  &__e {
+    background-color: #F1F1F1;
+    box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
+    padding: 5rem 0;
+    border-radius: 0.5rem;
   }
 }

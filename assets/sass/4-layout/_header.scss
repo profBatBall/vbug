@@ -17,6 +17,10 @@
 
     &__nav{
       margin: 1rem 2rem;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
     
     &__list {

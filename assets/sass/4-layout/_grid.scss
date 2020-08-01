@@ -1,18 +1,22 @@
 
 .row{
   max-width: $width;
-  margin: 0 auto;
   display: flex;
-  padding-top: 4rem;
+  margin-top: 4rem;
+  justify-content: space-between;
+
+  @include respond(sm-phone) {
+    display: block;
+    margin-top: 2rem;
+  }
 
 //--2-BOX
 & .col-2 {
-  // background-color: red;
   border-radius: 0.5rem;
   width: calc((100% - 1 * #{$gutter-horizontal}) / 2);
 
-  &:not(:last-child) {
-    margin-right: $gutter-horizontal;
+  @include respond(sm-phone) {
+    width: 100%;
   }
 }
 
@@ -20,21 +24,72 @@
   & .col-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
 
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-      border-right: 1px solid $color-primary;
+    @include respond(sm-phone) {
+      width: 100%;
     }
-  }
-  
-//--4-BOX
-  & .col-4 {
-    border-radius: 0.5rem;
-    background-color: $color-primary;
-    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
 
     &:not(:last-child) {
-      margin-right: $gutter-horizontal;
+      border-right: 1px solid $color-primary;
+
+      @include respond(phone) {
+        border-right: none;
+      }
     }
   }
 }
 
+// Work Grid
+.grid {
+  max-width: $width;
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-between;
+
+  @include respond(xl-phone) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &-50{
+    border-radius: 0.5rem;
+    background-color: $color-primary;
+    width: calc((100% - 3 * #{$gutter-horizontal-w}) / 4);
+
+    @include respond(xl-phone) {
+      width: 48.5%;
+      margin-bottom: 1.5rem;
+    }
+
+    @include respond(sm-phone) {
+      width: 100%;
+    }
+  }
+}
+
+// Testiomonial Grid
+.grid-m {
+  max-width: $width;
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &-50{
+    border-radius: 0.5rem;
+    background-color: $color-primary;
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+
+    @include respond(tab-port) {
+      width: 48.5% ;
+      margin: 5rem 0;
+    }
+
+    @include respond(sm-phone) {
+      width: 100%;
+    }
+  }
+}

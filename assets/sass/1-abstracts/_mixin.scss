@@ -23,7 +23,7 @@
 1200 - 1800px    Noramal Sixe
 1800px++         Big Screen
 
-$breakpoint is argument
+$breakpoint argument choices
 - phone
 - tab-port
 - tab-land
@@ -37,16 +37,22 @@ em is more suitable for media query
 
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == sm-phone {
+    @media (max-width: 28.125em) { @content };  // 450px
+  }
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) { @content }  // 600px
+    @media (max-width: 37.5em) { @content };  // 600px
+  }
+  @if $breakpoint == xl-phone {
+    @media (max-width: 46.875em) { @content };  // 750px
   }
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) { @content } // 900px
+    @media (max-width: 56.25em) { @content }; // 900px
   }
   @if $breakpoint == tab-land {
-    @media (max-width: 75em) { @content }    // 1200px
+    @media (max-width: 75em) { @content };   // 1200px
   }
   @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) { @content } // 1800px++
+    @media (min-width: 112.5em) { @content }; // 1800px++
   }
 }

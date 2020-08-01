@@ -47,6 +47,14 @@
     z-index: -1;
     transition: all 0.4s;
   }    
+
+  
+  @include respond(sm-phone) {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 15rem;
+    text-align: center;
+  }
 }
 
 
@@ -95,5 +103,5 @@
 
 .btn-next {
   float: right;
-  // margin-top: 2rem;
+  margin-top: 1rem;
 }

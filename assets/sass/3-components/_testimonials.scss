@@ -1,6 +1,7 @@
 .testi__wrap {
   margin-top: 5rem;
   box-shadow: 0px 0px 5px 0px rgba($color-black,0.5);
+  background-color: $color-primary;
 
   .testi__box {
   
@@ -8,31 +9,32 @@
       position: relative;
 
       &__basics {
+        background-position: center center;
+        background-size: cover;
         position: absolute;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         width: 12rem;
         height: 12rem;
-        background-size: cover;
         border-radius: 50%;
         margin: 0 auto;
         box-shadow:  0px 0px 8px 0px rgba($color-black,0.5);
       }
 
       &--1 {
-        background-image: url("/assets/img/tasty-1a.jpg");
+        background-image: url("/assets/img/t/tasty-1.jpg");
       }
 
       &--2 {
-        background-image: url("/assets/img/tasty-2a.jpg");
+        background-image: url("/assets/img/t/tasty-2.jpg");
       }
 
       &--3 {
-        background-image: url("/assets/img/tasty-3a.jpg");
+        background-image: url("/assets/img/t/tasty-3.jpg");
       }
 
       &--4 {
-        background-image: url("/assets/img/tasty-4a.jpg");
+        background-image: url("/assets/img/t/tasty-4.jpg");
       }
     }
   

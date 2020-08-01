@@ -18,12 +18,18 @@
       margin-top: -2rem;
 
       &__hero2 {
-        background-image: url("/assets/img/hero.jpg");
+        background-image: url("/assets/img/i/fol-6a-sm.jpg");
         width: 100%;
         height: 55rem;
         background-size: cover;
+        background-position: center center;
         box-shadow: 0px 0px 6px -1px rgba($color-black, 0.5);
         border-radius: 0.4rem;
+
+        @media (min-resolution: 192dpi) and (min-width: 37.5em),
+              (min-width: 125em) {
+        background-image: url("/assets/img/fol-6a.jpg");
+      }
       }
     }
 
@@ -65,60 +71,187 @@
     &__works {
 
       & .box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        cursor: pointer;
 
-        &__model {
-            width: calc((100% - 3 * #{$gutter-box}) / 4);
-        
-            &:not(:last-child) {
-              margin-right: $gutter-box;
-            }
+        @include respond(xl-phone) {
+          display: block;
         }
 
-        &__lg {
-          width: 100%;
-          height: 15rem;
-          background-color: red;
-          border-radius: 0.3rem;
-          margin-bottom: $gutter-box-mini;
-          transition: all 0.2s ease-in-out;
+        &__h__effect:hover {
+          transform: scale(1.1);
+          transition: transform 0.2s ease-in;
+        }
 
-          &:hover {
-            transform: scale(1.1);
+        &__wrapper {
+          width: 49.5%;
+          // background-color: pink;
+          display: flex;
+          justify-content: space-between;
+
+          @include respond(xl-phone) {
+            width: 100%;
+          }
+
+          @include respond(sm-phone) {
+            display: block;
+          }
+
+          &-m {
+
+            @include respond(xl-phone) {
+              margin-top: 0.7rem;
+            }
+          }
+        }
+
+        &__model {
+          width: 98%;
+        }
+        
+        &__lg {
+          width: 96.5%;
+          background-color: red;
+          height: 14rem;
+          border-radius: 0.3rem;
+          box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
+
+          @include respond(tab-land) {
+            height: 13rem;
+          }
+
+          @include respond(tab-port) {
+            height: 11.5rem;
+          }
+
+          @include respond(xl-phone) {
+            height: 15rem;
+          }
+
+          @include respond(phone) {
+            height: 14rem;
+          }
+
+          @include respond(sm-phone) {
+            height: 15rem;
+            width: 100%;
+          }
+
+          &-1, &-2 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+
+          &-1 {
+            background-image: url(/assets/img/w/work-1t.jpg);
+          }
+
+          &-2 {
+            background-image: url(/assets/img/w/work-2t.jpg);
           }
         }
 
         &__sm__wrap {
+          width: 96.5%;
           display: flex;
-          width: 100%;
+          justify-content: space-between;
+
+          @include respond(sm-phone) {
+            width: 100%;
+          }
         }
 
         &__sm {
-          width: 100%;
-          height: 12rem;
+          width: 48.5%;
+          height: 14rem;
           background-color: green;
           border-radius: 0.3rem;
-          margin-bottom: $gutter-box-mini;
-          transition: all 0.2s ease-in-out;
+          box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
 
-          &:hover {
-            transform: scale(1.1);
+          @include respond(tab-land) {
+            height: 13rem;
           }
 
-          &:not(:last-child) {
-            margin-right: $gutter-box-mini;
-            
+          @include respond(tab-port) {
+            height: 11.2rem;
+          }
+
+          @include respond(xl-phone) {
+            height: 15rem;
+          }
+
+          @include respond(phone) {
+            height: 14rem;
+          }
+
+          @include respond(sm-phone) {
+            height: 13rem;
+          }
+
+          &-1, &-2, &-3, &-4 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+
+          &-1 {
+            background-image: url(/assets/img/w/work-3t.jpg);
+          }
+
+          &-2 {
+            background-image: url(/assets/img/w/work-4t.jpg);
+          }
+
+          &-3 {
+            background-image: url(/assets/img/w/work-5t.jpg);
+          }
+
+          &-4 {
+            background-image: url(/assets/img/w/work-6t.jpg);
+          }
+        }
+
+        &__order {
+
+          @include respond(xl-phone) {
+            order: 1;
+          }
+
+          @include respond(sm-phone) {
+            order: 2;
           }
         }
 
         &__xl {
-          width: 100%; 
-          height: 28rem;
-          background-color: pink;
+          width: 100%;
+          height: 100%;
+          background-color: cyan;
           border-radius: 0.3rem;
-          transition: all 0.2s ease-in-out;
+          box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.5);
 
-          &:hover {
-            transform: scale(1.1);
+          @include respond(xl-phone) {
+            width: 96.4%;
+          }
+
+          @include respond(sm-phone) {
+            display: none;
+          }
+
+          &-1, &-2 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+
+          &-1 {
+            background-image: url(/assets/img/w/work-7t.jpg);
+          }
+
+          &-2 {
+            background-image: url(/assets/img/w/work-8t.jpg);
           }
         }
       }
